@@ -1,5 +1,6 @@
 package com.midterm.lengocanhdung.dao;
 
+import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
@@ -7,7 +8,7 @@ import androidx.room.Update;
 import com.midterm.lengocanhdung.model.Question;
 
 import java.util.List;
-
+@Dao
 public interface QuestionDao {
     @Query("SELECT * FROM Question")
     List<Question> getAll();
