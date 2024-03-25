@@ -13,8 +13,7 @@ public class Question {
     @ColumnInfo
     private Boolean check;
 
-    public Question(int id, String content, Boolean check) {
-        this.id = id;
+    public Question(String content, Boolean check) {
         this.content = content;
         this.check = check;
     }
